@@ -1,6 +1,3 @@
-TASKS 2.1 - 2.3
-
-her opretter jeg:
 
 🗃️ JPA & DAO-lag
 
