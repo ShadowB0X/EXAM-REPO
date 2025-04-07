@@ -1,4 +1,4 @@
-
+### INFO README SER BEDRE UD INDE I ET PROGRAMMERINGSSPROG ##
 🗃️ JPA & DAO-lag
 
 Projektet bruger JPA (med Hibernate) til at mappe Java-entiteter som SkiLesson og Instructor direkte til databasen via @Entity.
