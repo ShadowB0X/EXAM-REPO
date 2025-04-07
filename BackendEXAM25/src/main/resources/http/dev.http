@@ -1,0 +1,69 @@
+### Get all ski lessons
+GET http://localhost:7070/api/Ski
+Accept: application/json
+
+### Create a new ski lesson
+POST http://localhost:7070/api/Ski
+Content-Type: application/json
+
+{
+  "name": "Backcountry Basics",
+  "price": 400.0,
+  "latitude": 45.123,
+  "longitude": 12.321,
+  "starttime": "2025-01-20T10:00:00",
+  "endtime": "2025-01-20T12:00:00",
+  "level": "BEGINNER",
+  "instructorId": 1
+}
+
+### Get ski lesson by ID
+GET http://localhost:7070/api/Ski/1
+Accept: application/json
+
+### Update ski lesson
+PUT http://localhost:7070/api/Ski/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Lesson Name",
+  "price": 499.0,
+  "latitude": 45.222,
+  "longitude": 12.999,
+  "starttime": "2025-01-25T10:00:00",
+  "endtime": "2025-01-25T12:00:00",
+  "level": "INTERMEDIATE",
+  "instructorId": 1
+}
+
+### Delete ski lesson
+DELETE http://localhost:7070/api/Ski/1
+
+### Add instructor to ski lesson
+PUT http://localhost:7070/api/Ski/2/instructor/1
+
+### Get lessons by instructor ID ### Bonus
+GET http://localhost:7070/api/Ski/by-instructor/1
+
+### Test GET non-existing lesson
+GET http://localhost:7070/api/Ski/9999
+
+### Test DELETE non-existing lesson
+DELETE http://localhost:7070/api/Ski/9999
+
+### Get ski lessons by level
+GET http://localhost:7070/api/Ski/level/BEGINNER
+Accept: application/json
+
+### Get total price per instructor
+GET http://localhost:7070/api/Ski/instructor-price-sum
+Accept: application/json
+
+### GET ski lessons by level (Beginner)
+GET http://localhost:7070/api/Ski/level/beginner
+Accept: application/json
+
+### GET total instruction duration for a level
+GET http://localhost:7070/api/Ski/instructions/intermediate/total
+Accept: application/json
