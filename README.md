@@ -1,5 +1,7 @@
 ### INFO README SER BEDRE UD INDE I ET PROGRAMMERINGSSPROG ##
 
+## UPDATE-FYI = ## 1. README File l.41-50 er ikke baseret på mit programs routes
+
 Her kommer et gemmemgang af programmet
 
 🗃️ JPA & DAO-lag
